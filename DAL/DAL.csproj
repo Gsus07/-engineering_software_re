@@ -42,13 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdministradorRepository.cs" />
-    <Compile Include="ClienteRepository.cs" />
     <Compile Include="DetalleFacturaAlquilerRepository.cs" />
     <Compile Include="DetalleFacturaProductoRepository.cs" />
     <Compile Include="DetalleFacturaRepository.cs" />
     <Compile Include="DispositivoAlquilerRepository.cs" />
     <Compile Include="DistribuidorProductoRepository.cs" />
-    <Compile Include="EmpleadoRepository.cs" />
     <Compile Include="FacturaAlquilerRepository.cs" />
     <Compile Include="FacturaProductoRepository.cs" />
     <Compile Include="FacturaRepository.cs" />

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ObsidianProjectGUI
 {
-    public partial class FrmEquiposAlquiler : Form
+    public partial class FrmGestionarPersona : Form
     {
-        public FrmEquiposAlquiler()
+        public FrmGestionarPersona()
         {
             InitializeComponent();
         }
@@ -20,6 +20,16 @@ namespace ObsidianProjectGUI
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void FrmGestionarPersona_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

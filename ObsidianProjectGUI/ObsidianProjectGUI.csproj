@@ -46,11 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmEquiposAlquiler.cs">
+    <Compile Include="BDObsidianDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDObsidianDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionarPersona.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEquiposAlquiler.Designer.cs">
-      <DependentUpon>FrmEquiposAlquiler.cs</DependentUpon>
+    <Compile Include="FrmGestionarPersona.Designer.cs">
+      <DependentUpon>FrmGestionarPersona.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmFacturaEquipoAlquiler.cs">
       <SubType>Form</SubType>
@@ -88,16 +93,10 @@
     <Compile Include="FrmProducto.Designer.cs">
       <DependentUpon>FrmProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistroCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmRegistroCliente.Designer.cs">
-      <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmEquiposAlquiler.resx">
-      <DependentUpon>FrmEquiposAlquiler.cs</DependentUpon>
+    <EmbeddedResource Include="FrmGestionarPersona.resx">
+      <DependentUpon>FrmGestionarPersona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFacturaEquipoAlquiler.resx">
       <DependentUpon>FrmFacturaEquipoAlquiler.cs</DependentUpon>
@@ -117,9 +116,6 @@
     <EmbeddedResource Include="FrmProducto.resx">
       <DependentUpon>FrmProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistroCliente.resx">
-      <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -129,6 +125,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="BDObsidianDataSet.xsc">
+      <DependentUpon>BDObsidianDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BDObsidianDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDObsidianDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDObsidianDataSet.xss">
+      <DependentUpon>BDObsidianDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

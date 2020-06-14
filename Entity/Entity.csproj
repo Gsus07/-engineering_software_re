@@ -44,11 +44,9 @@
     <Compile Include="Administrador.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="DetalleFactura.cs" />
-    <Compile Include="DispositivoAlquiler.cs" />
     <Compile Include="DistribuidorProducto.cs" />
     <Compile Include="Empleado.cs" />
     <Compile Include="Factura.cs" />
-    <Compile Include="OpcionFactura.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

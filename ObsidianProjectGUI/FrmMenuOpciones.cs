@@ -21,14 +21,15 @@ namespace ObsidianProjectGUI
         private void MostrarFormSecundaria(object formHija)
         {
             if (this.Envoltura.Controls.Count > 0)
+            {
                 this.Envoltura.Controls.RemoveAt(0);
-
-            Form form = formHija as Form;
-            form.TopLevel = false;
-            form.Dock = DockStyle.Fill;
-            this.Envoltura.Controls.Add(form);
-            this.Envoltura.Tag = form;
-            form.Show();
+                Form form = formHija as Form;
+                form.TopLevel = false;
+                form.Dock = DockStyle.Fill;
+                this.Envoltura.Controls.Add(form);
+                this.Envoltura.Tag = form;
+                form.Show();
+            }
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -95,7 +96,7 @@ namespace ObsidianProjectGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MostrarFormSecundaria(new FrmEquiposAlquiler());
+            MostrarFormSecundaria(new FrmGestionarPersona());
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -110,12 +111,27 @@ namespace ObsidianProjectGUI
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MostrarFormSecundaria(new FrmRegistroCliente());
+            MostrarFormSecundaria(new FrmGestionarPersona());
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             MostrarFormSecundaria(new FrmInforme());
+        }
+
+        private void ContenedorMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblHora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFecha_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,5 +16,10 @@ namespace ObsidianProjectGUI
         {
             InitializeComponent();
         }
+
+        private void FrmFacturaEquipoAlquiler_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -21,5 +21,10 @@ namespace ObsidianProjectGUI
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void FrmInforme_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
